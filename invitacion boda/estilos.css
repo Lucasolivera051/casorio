@@ -488,4 +488,52 @@ label {
     opacity: 1;
     bottom: 0;
 }
-
+/* R E G A L O S*/
+#Regalos{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+#Regalos .contenedor-foto{
+    max-width: px;
+    margin-right: 80px;
+}
+#Regalos .contenedor-foto img{
+    padding: 8px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+#Regalos .sobremi{
+    margin: 0 40px;
+}
+#Regalos .sobremi .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#Regalos .sobremi h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+#Regalos .sobremi h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#Regalos .sobremi p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #0c0c0c;
+    margin-bottom: 12px;
+    
+}
