@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="lightbox.css">
     <title>Boda Lucas y Paula</title>
 </head>
 <body>
@@ -112,32 +113,32 @@
     <!--seccion ALBUM-->
     <section id="album">
         <h3 class="titulo-seccion">Album</h3>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <li><img src="img/album/1.jpg" alt=""></li>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <li><img src="img/album/2.jpg" alt=""></li>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <li><img src="img/album/3.jpg" alt=""></li>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <li><img src="img/album/4.jpg" alt=""></li>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <li><img src="img/album/5.jpg" alt=""></li>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <li><img src="img/album/6.jpg" alt=""></li>
+        <div class="container">
+            <div class="gallery">
+                <a href="img/album/1.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/1.jpg">
+                </a>
+                <a href="img/album/2.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/2.jpg" alt="">
+                </a>
+                <a href="img/album/3.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/3.jpg" alt="">
+                </a>
+                <a href="img/album/4.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/4.jpg" alt="">
+                </a>
+                <a href="img/album/5.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/5.jpg" alt="">
+                </a>
+                <a href="img/album/6.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/6.jpg" alt="">
+                </a>
+                <a href="img/album/7.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/7.jpg" alt="">
+                </a>
+                <a href="img/album/8.jpg" data-lightbox="models" data-title="">
+                    <img src="img/album/8.jpg" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -263,6 +264,6 @@
     </section>
 
     <script src="script.js"></script>
-    <script src="carousel.js"></script>
+    <script src="lightbox-plus-jquery.min.js" ></script>
 </body>
 </html>
