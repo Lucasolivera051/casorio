@@ -210,21 +210,7 @@ label {
     margin-bottom: 12px;
     
 }
-#Nosotros .sobremi a{
-    display: inline-block;
 
-    color: #000;
-    border-radius: 30px;
-    padding: 10px;
-    border: 1px solid #000;
-    margin-top: 30px;
-    transition: .5s;
-    
-}
-#Nosotros .sobremi a:hover{
-    background-color:rgb(97, 205, 255);
-    color: #fff;
-}
 /*LINEA DEL TIEMPO*/
 #linea .titulo{
     margin-top: 20px;
