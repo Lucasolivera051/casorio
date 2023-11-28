@@ -1,29 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Moon+Dance&display=swap');
-*{
+
+:root {
+    --bg-color-primario:
+        linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 241, 1) 42%, rgba(224, 229, 241, 1) 100%);
+    ;
+    --bg-color-primario-reverse:
+        linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(224, 229, 241, 1) 42%, rgba(224, 229, 241, 1) 100%);
+    ;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
- scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-#Inicio{
+
+#Inicio {
     font-family: 'Allura', cursive;
     font-family: 'Moon Dance', cursive;
-    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url("img/11.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/11.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    
+
 }
-#Inicio .contenido header{
-    background-color: rgba(0,0,0, .8);
+
+#Inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
     position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
 }
-#Inicio .contenido header .contenido-header{
+
+#Inicio .contenido header .contenido-header {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -31,27 +45,32 @@ html {
     align-items: center;
     padding: 10px 20px;
 }
-#Inicio .contenido header .contenido-header h1{
+
+#Inicio .contenido header .contenido-header h1 {
     text-align: initial;
     color: white;
 }
-#Inicio .contenido header .contenido-header nav ul{
+
+#Inicio .contenido header .contenido-header nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    
+
 }
-#Inicio .contenido header .contenido-header nav ul li a{
+
+#Inicio .contenido header .contenido-header nav ul li a {
     text-decoration: none;
     color: white;
     margin: 0 12px;
     font-weight: 400;
     transition: .5s;
 }
-#Inicio .contenido header .contenido-header nav ul a:hover{
+
+#Inicio .contenido header .contenido-header nav ul a:hover {
     color: rgb(153, 57, 231);
 }
-#Inicio .contenido .presentacion{
+
+#Inicio .contenido .presentacion {
     max-width: 1100px;
     height: 100vh;
     margin: auto;
@@ -61,18 +80,21 @@ html {
     align-items: center;
     justify-content: center;
 }
-#Inicio .contenido .presentacion .Bienvenida{
+
+#Inicio .contenido .presentacion .Bienvenida {
     font-size: 40px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
-#Inicio .contenido .presentacion h2{
+
+#Inicio .contenido .presentacion h2 {
     font-size: 90px;
     margin-bottom: 25px;
     text-align: center;
 }
-#Inicio .contenido .presentacion .descripcion{
+
+#Inicio .contenido .presentacion .descripcion {
     max-width: 700px;
     margin: 25px auto;
     font-size: 25px;
@@ -80,7 +102,8 @@ html {
     text-transform: uppercase;
 
 }
-#Inicio .contenido .presentacion a{
+
+#Inicio .contenido .presentacion a {
     text-decoration: none;
     display: inline-block;
     margin: 25px;
@@ -92,39 +115,42 @@ html {
     text-transform: uppercase;
     transition: .5s;
 }
-#Inicio .contenido .presentacion a:hover{
-background-color: #ad7b84;
+
+#Inicio .contenido .presentacion a:hover {
+    background-color: #ad7b84;
 }
-#icono-nav{
+
+#icono-nav {
     color: #fff;
     display: none;
 }
-/*SECCION C U E N T A  A T R A S*/ 
+
+/*SECCION C U E N T A  A T R A S*/
 
 #cuentaregresiva {
     display: flex;
     justify-content: center;
-    background: linear-gradient(rgba(232, 247, 248, 0.8), rgba(203, 239, 250, 0.8));
+    background: var(--bg-color-primario);
 }
 
-.countdown{
+.countdown {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 60px 0;
+    padding: 60px 20px;
     text-align: center;
     color: white;
     max-width: 1200px;
     width: 100vw;
-    
+
 }
 
 #cuentaregresiva .countdown h1 {
     font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
-    color: #000000 ;
+    color: #000000;
     font-weight: lighter;
 }
 
@@ -147,7 +173,7 @@ label {
 }
 
 /* SECCION N O S O T R O S*/
-.contenedor-nosotros{
+.contenedor-nosotros {
     max-width: 1200px;
     margin: auto;
     padding: 50px 15px;
@@ -155,7 +181,7 @@ label {
     display: flex;
 }
 
-#Nosotros .titulo{
+#Nosotros .titulo {
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -165,22 +191,25 @@ label {
     text-decoration-thickness: 5px;
 }
 
-#Nosotros .contenedor-foto{
-   margin-right: 10px;
-   width: 200pc;
-   display: flex;
-   align-items: center;
+#Nosotros .contenedor-foto {
+    margin-right: 10px;
+    width: 200pc;
+    display: flex;
+    align-items: center;
 }
-#Nosotros .contenedor-foto img{
+
+#Nosotros .contenedor-foto img {
     padding: 8px;
     width: 100%;
     border-radius: 20px;
     background-color: #fff;
 }
-#Nosotros .sobremi{
+
+#Nosotros .sobremi {
     margin: 0 40px;
 }
-#Nosotros .sobremi .titulo-seccion{
+
+#Nosotros .sobremi .titulo-seccion {
     margin-top: 20px;
     font-size: 29px;
     text-transform: uppercase;
@@ -190,29 +219,32 @@ label {
     text-decoration-thickness: 5px;
     text-align: center;
 }
-#Nosotros .sobremi h2{
+
+#Nosotros .sobremi h2 {
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
 }
-#Nosotros .sobremi h3{
+
+#Nosotros .sobremi h3 {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
-#Nosotros .sobremi p{
+
+#Nosotros .sobremi p {
     font-size: 20px;
     line-height: 25px;
     color: #0c0c0c;
     margin-bottom: 12px;
-    
+
 }
 
 /*LINEA DEL TIEMPO*/
-#linea .titulo{
+#linea .titulo {
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -221,7 +253,8 @@ label {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
-#linea .timeline{
+
+#linea .timeline {
     position: relative;
     margin: 40px auto;
     padding: 20px 0;
@@ -230,57 +263,69 @@ label {
     flex-direction: row;
     justify-content: space-between;
     text-transform: uppercase;
-    
+
 }
-#linea .event{
+
+#linea .event {
     text-align: center;
     margin-top: 28px;
 }
-#linea .event p{
+
+#linea .event p {
     margin: 5px 0;
     font-size: 25px;
 }
-#linea .event2{
+
+#linea .event2 {
     text-align: center;
 }
-#linea .event2 p{
+
+#linea .event2 p {
     margin: 5px 0;
     font-size: 25px;
 }
-#linea .event2 img{
+
+#linea .event2 img {
     margin-top: 40px;
 }
-#linea .event3{
+
+#linea .event3 {
     text-align: center;
 }
-#linea .event3 p{
+
+#linea .event3 p {
     margin: 5px 0;
     font-size: 25px;
 }
-#linea .event3 img{
+
+#linea .event3 img {
     margin-top: 22px;
 }
-#linea .event4{
+
+#linea .event4 {
     text-align: center;
 }
-#linea .event4 p{
+
+#linea .event4 p {
     margin: 5px 0;
     font-size: 25px;
 }
-#linea .event4 img{
+
+#linea .event4 img {
     margin-top: 16px;
 }
 
 
 /*seccion A L B U M*/
-#album{
-    
+#album {
+
     padding: 10px 0;
     margin: auto;
     list-style: none;
-    background: linear-gradient(rgba(232, 247, 248, 0.8), rgba(203, 239, 250, 0.8));
+    background-color: #E0E5F1;
 }
-#album .titulo-seccion{
+
+#album .titulo-seccion {
     margin-top: 20px;
     text-align: center;
     font-size: 29px;
@@ -290,36 +335,41 @@ label {
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
-    
+
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 50hv;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     padding: 50px 8%;
 }
-.gallery{
+
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
 }
+
 .gallery img {
+    border-radius: 2%;
     width: 100%;
 }
 
 /*seccion viedma*/
-#viedma{
+#viedma {
     max-width: 1000px;
     margin: auto;
     padding: 50px 15px;
     color: #111135;
     display: flex;
-     
+
+
 }
-#viedma .titulo{
+
+#viedma .titulo {
     padding-bottom: 20px;
     margin-top: 20px;
     text-align: center;
@@ -329,25 +379,29 @@ label {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
-#viedma .contenedor-foto2{  
+
+#viedma .contenedor-foto2 {
     margin-left: 10px;
-    
+
 }
-#viedma .contenedor-foto2 img{
+
+#viedma .contenedor-foto2 img {
     padding: 8px;
     width: 110%;
     border-radius: 20px;
     background-color: #fff;
     margin-bottom: 1px;
 }
-    #viedma .elegimosviedma h2{
-        font-size: 34px;
-        font-weight: lighter    ;
-        margin: 20px 0;
-        letter-spacing: 2px;
-        
+
+#viedma .elegimosviedma h2 {
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 20px 0;
+    letter-spacing: 2px;
+
 }
-#viedma .elegimosviedma .historia p{
+
+#viedma .elegimosviedma .historia p {
     font-size: 20px;
     line-height: 25px;
     color: #0c0c0c;
@@ -355,18 +409,19 @@ label {
 }
 
 /*SECCION CUANDO Y DONDE*/
-#Cuando {  
-    background: linear-gradient(rgba(232, 247, 248, 0.8), rgba(203, 239, 250, 0.8));  
+#Cuando {
+
     margin: auto;
     padding: 50px 15px;
     display: flex;
     flex-direction: column;
+    background-color: #E0E5F1;
 }
 
-#Cuando .titulo-seccion{
+#Cuando .titulo-seccion {
     text-align: center;
     font-weight: lighter;
-    font-size: 25px;    
+    font-size: 25px;
     color: #111135;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
@@ -374,18 +429,18 @@ label {
     margin-bottom: 60px;
 }
 
-#Cuando .titulo-seccion h2{
+#Cuando .titulo-seccion h2 {
     font-size: 34px;
     font-weight: lighter;
 }
 
-.cuando-contenedor{
+.cuando-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#Cuando .civil{
+#Cuando .civil {
     padding: 95px;
     background-color: lightblue;
     text-align: center;
@@ -394,7 +449,7 @@ label {
     position: relative;
 }
 
-.civil::before{
+.civil::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -403,7 +458,8 @@ label {
     width: 100%;
     height: 100%;
     opacity: 0.6;
-    filter: blur(2px);
+    filter: blur(1px);
+
     background-image: url('./img/maps/civil.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -411,15 +467,16 @@ label {
     object-fit: cover;
 }
 
-#Cuando .civil .civilText{
+#Cuando .civil .civilText {
     position: relative;
     width: 200px;
     height: 100px;
 }
 
-#Cuando .ceremonia{
+#Cuando .ceremonia {
     padding: 95px;
     background-color: lightblue;
+
     text-align: center;
     margin-left: 90px;
     margin-right: 30px;
@@ -427,7 +484,7 @@ label {
     position: relative;
 }
 
-.ceremonia::before{
+.ceremonia::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -435,8 +492,10 @@ label {
     top: 0;
     width: 100%;
     height: 100%;
+
     opacity: 0.6;
-    filter: blur(2px);
+    filter: blur(1px);
+
     background-image: url('./img/maps/salon.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -444,13 +503,13 @@ label {
     object-fit: cover;
 }
 
-#Cuando .ceremonia .salon{
+#Cuando .ceremonia .salon {
     position: relative;
     width: 200px;
     height: 100px;
 }
 
-#Cuando .civil a{
+#Cuando .civil a {
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -459,44 +518,49 @@ label {
     border: 1px solid #000;
     margin-top: 30px;
     transition: .5s;
+
 }
-#Cuando .civil a:hover{
-    background-color:rgb(20, 162, 245);
+
+#Cuando .civil a:hover {
+    background-color: rgb(20, 162, 245);
     color: #fff;
 }
-#Cuando .ceremonia a{
+
+#Cuando .ceremonia a {
     display: inline-block;
     text-decoration: none;
     color: #000;
     border-radius: 30px;
     padding: 10px;
     border: 1px solid #000;
-    margin-top: 30px;
+    margin-top: 10px;
     transition: .5s;
 }
-#Cuando .ceremonia a:hover{
-    background-color:rgb(20, 162, 245);
+
+#Cuando .ceremonia a:hover {
+    background-color: rgb(20, 162, 245);
     color: #fff;
 }
+
 /*SECCION ITINERARIO*/
 
-#Itinerario p{
+#Itinerario p {
     text-align: center;
     text-transform: uppercase;
     margin: auto;
     font-size: 29px;
-    
+
 }
 
-#Itinerario .titulo-seccion{
+#Itinerario .titulo-seccion {
     margin-top: 30px;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
 
-#Itinerario .timeline{
-    
+#Itinerario .timeline {
+
     position: relative;
     margin: 60px auto;
     padding: 10px 0;
@@ -508,69 +572,75 @@ label {
     text-transform: uppercase;
 }
 
-#Itinerario img{
+#Itinerario img {
     height: 100px;
 }
 
-#Itinerario .event{
+#Itinerario .event {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#Itinerario .event p{
-    margin: 5px 0;
-    font-size: 25px;
-}
-#Itinerario .event2{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#Itinerario .event2 p{
+
+#Itinerario .event p {
     margin: 5px 0;
     font-size: 25px;
 }
 
-#Itinerario .event3{
+#Itinerario .event2 {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#Itinerario .event3 p{
+
+#Itinerario .event2 p {
     margin: 5px 0;
     font-size: 25px;
 }
 
-#Itinerario .event4{
+#Itinerario .event3 {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#Itinerario .event4 p{
+
+#Itinerario .event3 p {
+    margin: 5px 0;
+    font-size: 25px;
+}
+
+#Itinerario .event4 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Itinerario .event4 p {
     margin: 5px 0;
     font-size: 25px;
 }
 
 /*SECCION ASISTENCIA*/
 
-#Asistencia{
-    max-width: 1200px;
+#Asistencia {
     padding: 20px 0;
+
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#Asistencia .titulo-seccion{
+
+#Asistencia .titulo-seccion {
     text-align: center;
     font-size: 29px;
     font-weight: lighter;
@@ -581,18 +651,22 @@ label {
     text-decoration-thickness: 5px;
     padding: 20px;
 }
-#Asistencia .ir{
+
+#Asistencia .ir {
+    padding: 0 200px;
     text-align: center;
     font-size: 20px;
     line-height: 25px;
     color: #0c0c0c;
     margin-bottom: 12px;
-      
+
 }
-#Asistencia .forms{
+
+#Asistencia .forms {
     padding: 40px;
 }
-#Asistencia .forms a{
+
+#Asistencia .forms a {
     text-decoration: none;
     color: #000000;
     border-radius: 30px;
@@ -601,19 +675,23 @@ label {
     margin-top: 30px;
     transition: .5s;
 }
+
 #Asistencia .forms a:hover {
     background-color: #e40303;
     color: #f8f8f8;
 }
 
 /* R E G A L O S*/
-#Regalos{
-    max-width: 1200px;
+#Regalos {
+
     margin: auto;
-    padding: 100px 15px;
+    padding: 100px 200px;
+    background: var(--bg-color-primario-reverse);
+
     color: #111135;
 }
-#Regalos .titulo{
+
+#Regalos .titulo {
     text-align: center;
     font-size: 29px;
     font-weight: lighter;
@@ -625,7 +703,7 @@ label {
     padding: 20px;
 }
 
-#Regalos .titulo p{
+#Regalos .titulo p {
     text-align: center;
     font-size: 29px;
     font-weight: lighter;
@@ -637,27 +715,30 @@ label {
     padding: 20px;
 }
 
-#Regalos .contenedor-foto{
+#Regalos .contenedor-foto {
     max-width: px;
     margin-right: 80px;
 }
-#Regalos .contenedor-foto img{
+
+#Regalos .contenedor-foto img {
     padding: 8px;
     width: 50%;
     border-radius: 20px;
     background-color: #fff;
 }
-#Regalos .sobremi{
+
+#Regalos .sobremi {
     margin: 0 40px;
     text-align: center;
     font-size: 20px;
     line-height: 25px;
     color: #0c0c0c;
     margin-bottom: 12px;
-    
-    
+
+
 }
-#Regalos .sobremi .titulo-seccion{
+
+#Regalos .sobremi .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
@@ -665,23 +746,172 @@ label {
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
-#Regalos .sobremi h2{
+
+#Regalos .sobremi h2 {
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
 }
-#Regalos .sobremi h3{
+
+#Regalos .sobremi h3 {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
-#Regalos .sobremi p{
+
+#Regalos .sobremi p {
     font-size: 14px;
     line-height: 25px;
     color: #0c0c0c;
     margin-bottom: 12px;
-    
+
+}
+
+Footer {
+
+    font-family: 'Allura', cursive;
+    font-family: 'Moon Dance', cursive;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/11.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 100vh;
+}
+
+footer h2 {
+    font-size: 90px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.descripcion-footer {
+    margin: 25px auto;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .responsive-item {
+        display: none;
+    }
+
+    .contenido-header {
+        justify-content: flex-start;
+    }
+
+    /*Nosotros*/
+    .contenedor-nosotros {
+        flex-direction: column;
+    }
+
+    #Nosotros .sobremi {
+        padding: 10px;
+        margin: 0;
+    }
+
+    #Nosotros .contenedor-foto {
+        margin: 0;
+
+    }
+
+    #Nosotros .contenedor-foto img {
+        padding: 0;
+    }
+
+    #Nosotros .contenedor-foto {
+        width: auto;
+    }
+
+    /*LINEA*/
+
+    #linea .timeline {
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+
+    /*ALBUM*/
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+
+    /*VIEDMA*/
+    #viedma {
+        flex-direction: column;
+    }
+
+    #viedma .contenedor-foto2 img {
+        width: 70%;
+    }
+
+    #viedma .contenedor-foto2 {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .historia {
+        padding: 10px;
+    }
+
+    /*CUANDO*/
+    .cuando-contenedor {
+        flex-direction: column;
+
+    }
+
+    #Cuando .civil {
+        margin: 20px 0;
+    }
+
+    #Cuando .ceremonia {
+        margin: 20px 0;
+    }
+
+    /*ITINERARIO*/
+    #Itinerario .timeline {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #Itinerario .event2 {
+        margin: 20px 0;
+    }
+
+    #Itinerario .event4 {
+        margin: 20px 0;
+    }
+
+    /*ASISTENCIA*/
+    #Asistencia .ir {
+        padding: 0 20px;
+    }
+
+    /*REGALOS*/
+    #Regalos {
+        padding: 20px 20px;
+        margin: 0;
+    }
+
+    #Regalos .sobremi {
+        margin: 0;
+    }
 }
