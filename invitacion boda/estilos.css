@@ -414,6 +414,8 @@ label {
     margin: auto;
     padding: 50px 15px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: #E0E5F1;
 }
@@ -437,14 +439,16 @@ label {
 .cuando-contenedor {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
 }
 
 #Cuando .civil {
     padding: 95px;
     background-color: lightblue;
     text-align: center;
-    margin-right: 60px;
+    margin: 20px;
     border-radius: 40px;
     position: relative;
 }
@@ -465,6 +469,7 @@ label {
     background-position: 50% 0;
     background-size: cover;
     object-fit: cover;
+    border-radius: 40px;
 }
 
 #Cuando .civil .civilText {
@@ -478,8 +483,7 @@ label {
     background-color: lightblue;
 
     text-align: center;
-    margin-left: 90px;
-    margin-right: 30px;
+    margin: 20px;
     border-radius: 40px;
     position: relative;
 }
@@ -501,6 +505,7 @@ label {
     background-position: 50% 0;
     background-size: cover;
     object-fit: cover;
+    border-radius: 40px;
 }
 
 #Cuando .ceremonia .salon {
@@ -809,6 +814,23 @@ footer p {
     text-transform: uppercase;
 }
 
+
+@media (max-width: 1000px) {
+    .cuando-contenedor{
+        width: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .responsive-item {
+        display: none;
+    }
+
+    .cuando-contenedor{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 600px) {
     .responsive-item {
         display: none;
@@ -882,10 +904,12 @@ footer p {
 
     #Cuando .civil {
         margin: 20px 0;
+        padding: 30%;
     }
 
     #Cuando .ceremonia {
         margin: 20px 0;
+        padding: 30%;
     }
 
     /*ITINERARIO*/

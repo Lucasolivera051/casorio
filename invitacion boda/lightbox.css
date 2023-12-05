@@ -202,6 +202,6 @@ body.lb-disable-scrolling {
 
 @media (max-width: 600px) {
   .lightbox .lb-image {
-    margin-top: 350px;
+    margin-top: 0px;
   }
 }
